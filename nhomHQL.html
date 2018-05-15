@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="nhomHQL.css">
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="header">
+    	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    		<div class="container">
+    						<div class="container-fluid">
+    							<!-- Brand and toggle get grouped for better mobile display -->
+    							<div class="navbar-header">
+    								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    									<span class="sr-only">Toggle navigation</span>
+    									<span class="icon-bar"></span>
+    									<span class="icon-bar"></span>
+    									<span class="icon-bar"></span>
+    								</button>
+    								<a class="navbar-brand" href="#" style="color: white;">HQL.com</a>
+    								<!-- <img src="./img/logo1.png" alt=""> -->
+    								<a class="navbar-right" href="#" style="color: white; padding-top: 15px;">Trang chủ</a>
+    							</div>
+    					
+    							<!-- Collect the nav links, forms, and other content for toggling -->
+    							<div class="collapse navbar-collapse navbar-ex1-collapse">
+									
+    								<form class="navbar-form navbar-right" role="search">
+    									<div class="form-group">
+    										<input type="text" class="form-control" placeholder="Search">
+    									</div>
+    									<button type="submit" class="btn btn-default " >Tìm kiếm</button>
+    								</form>
+    								<ul class="nav navbar-nav navbar-right">
+    									<li class="navbar-right" style="margin-right: 10px;"><a href="form.html"
+    									target="_blank" class="btn btn-danger" style="color: white">Đăng Ký</a></li>
+    									<li class="dropdown">
+    										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white">Thiết kế web <b class="caret"></b></a>
+    										<ul class="dropdown-menu">
+    											<li><a href="https://freetuts.net/hoc-html" target="_blank">html</a></li>
+    											<li><a href="https://freetuts.net/hoc-css" target="_blank">css</a></li>
+    											<li><a href="https://freetuts.net/hoc-javascript" target="_blank">javascript</a></li>
+    											
+    										</ul>		
+    									</li>
+    									<li class="dropdown">
+    										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white">Lập trình cơ bản <b class="caret"></b></a>
+    										<ul class="dropdown-menu">
+    											<li><a href="https://freetuts.net/hoc-php" target="_blank">php</a></li>
+    											<li><a href="http://vietjack.com/java/" target="_blank">java</a></li>
+    											<li><a href="http://vietjack.com/cplusplus/" target="_blank">c++</a></li>
+    											
+    										</ul>
+    									</li>
+    									<li class="dropdown">
+    										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white">học thành nghề <b class="caret"></b></a>
+    										<ul class="dropdown-menu">
+    											<li><a href="http://myclass.vn/hoc-nghe-lap-trinh-web-chuyen-nghiep/" target="_blank">học combo ngành lập trình web.net</a></li>
+    											<li><a href="http://myclass.vn/hoc-thanh-nghe-lap-trinh-front-end/" target="_blank">lập trình front-end chuyên nghiệp</a></li>
+    											<li><a href="http://myclass.vn/hoc-thanh-nghe-lap-trinh-front-end/" target="_blank">lập trình back-end chuyên nghiệp</a></li>
+    											
+    										</ul>
+    									</li>
+    								</ul>
+    							</div><!-- /.navbar-collapse -->
+    						</div>
+    						</div>
+    					</nav>				
+	    </div> <!--#header-->
+
+	    <div id="content">
+	    	<div id="calltoaction">
+	    		<div class="jumbotron">
+	    			<h1>Khóa học của HQL</h1>
+	    			<p>Hướng dẫn lập trình cơ bản nhất</p>
+	    			<!-- <a href="" class="btn btn-lg btn-success">Đăng ký</a> -->
+	    			<!-- Button trigger Modal -->
+	    			<button id="btn-click" class="btn btn-primary btn-lg" data-toggle="modal" data-show="true" data-target="#myModal">
+	    				Đăng nhập
+	    			</button>
+
+	    			<!-- Modal -->
+	    			<div class="modal fade" id="myModal" tabindex="-1" 
+	    			role="dialog" aria-labelledby="myModalLabel" aria-hiden="true" >
+	    				<div class="modal-dialog">
+	    					<div class="modal-content">
+	    						<div class="modal-header">
+	    							<button type="button" class="close" dataa-dismiss="modal" aria-hiden="true">&times;</button>
+	    							<h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
+	    						</div>
+	    						<div class="modal-body">
+	    							<form action="/action_page.php">
+									    <div class="form-group">
+									      <label for="email">Email:</label>
+									      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+									    </div>
+									    <div class="form-group">
+									      <label for="pwd">Password:</label>
+									      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+									    </div>
+									    <div class="checkbox">
+									      <label><input type="checkbox" name="remember"> Remember me</label>
+									    </div>
+									    
+								    </form>
+	    						</div>
+	    						<div class="modal-footer">
+	    							<button type="button" class="btn btn-de" data-dismiss="modal">close</button>
+	    							<button type="button" class="btn btn-danger">Login</button>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div> 
+					<!-- end Modal -->
+
+	    			<a href="" class="btn btn-lg btn-feature">Giới thiệu</a>
+	    		</div>
+	    	</div>
+	    	<div id="feature1">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-sm-4">
+	    					<span class="glyphicon glyphicon-record"></span>
+	    						<h3>Học trực tuyến</h3>
+	    						<p>Học trực tuyến thông qua video chất lượng cao.</p>
+	    					
+	    				</div>
+	    				<div class="col-sm-4">
+	    					<span class="glyphicon glyphicon-dashboard"></span>
+	    						<h3>Học mọi lúc</h3>
+	    						<p>Có thể học bất cứ khi nào bạn có thời gian.</p>
+	    					
+	    				</div>
+	    				<div class="col-sm-4">
+	    					<span class="glyphicon glyphicon-globe"></span>
+	    						<h3>Học mọi nơi</h3>
+	    						<p>Chỉ cần có kết nôi internet là bạn có thể bắt đầu học.</p>
+	    					
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div> <!-- #feature1 -->
+	    	<div id="feature2">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-sm-12">
+	    					<h2>Giới thiệu khóa học lập trình cơ bản</h2>
+	    					<p class="lead"> Hướng dẫn lập trình hướng đối tượng bằng java và php</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div> <!-- #feature2 -->
+	    	<div id="feature3">
+	    		<div class="container">
+		    		<div class="row">
+		    			<div class="col-sm-6 col-sm-push-6">
+		    				<img src="./img/gioihan.jpg" alt="" class="img-responsive img-circle center-block" style="width: 70%; height: auto;">
+		    			</div>
+		    			<div class="col-sm-6 col-sm-pull-6">
+		    				<h3 style="font-weight: bold;">Học trực tuyến</h3>
+		    				<p class="lead">Học trực tuyến có thể giúp bạn học ở mọi lúc, mọi nơi mà không bị ràng buộc về khoảng cách hay thời gian</p>
+		    				<p class="lead">Bài học là những video đã được chuẩn bị, bạn có thể xem trên nhiều thiết bị bao gồm máy tính, smartphone và tablet</p>
+		    			</div>
+		    		</div>
+		    		<div class="row">
+		    			<div class="col-sm-6">
+		    				<img src="./img/dongho.jpg" alt="" class="img-responsive img-circle center-block" style="width: 70%; height: auto;">
+		    			</div>
+		    			<div class="col-sm-6">
+		    				<h3 style="font-weight: bold;">Không giới hạn thời gian học</h3>
+		    				<p class="lead">Thời gian truy cập không giới hạn, bạn có thể vào xem lại bài học bất cứ lúc nào bất cứ khi nào bạn rảnh</p>
+		    				<p class="lead">Học viên sẽ được tham gia vào nhóm facebook đặc biệt để nhận sự hổ trợ khi gặp khó khăn hay thắc mắc đồng thời trao đổi với các học viên khác</p>
+		    			</div>
+		    		</div>
+		    	</div>
+	    	</div> <!-- #feature3 -->
+	    	<div id="feature4">
+	    		<div class="container">
+	    			<div class="row">
+	    				<form action="">
+	    					<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+	    						<label for="" class="sr-only">Email</label>
+	    						<input type="text" class="form-control btn-lg" placeholder="Nhập địa chỉ email...">
+	    					</div>
+	    					<div class="form-group col-xs-12 col-sm-3">
+	    						<button type="submit" class="btn btn-danger btn-lg btn-block">Đăng ký</button>
+	    					</div>
+	    				</form>
+	    			</div>
+	    		</div>
+	    	</div> <!-- #feature4 -->
+	    </div> <!--#content-->
+
+	    <div id="footer">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-sm-12 text-center">
+	    				<ul class="list-inline">
+	    					<li><a href="#header">Trang Chủ</a></li>
+	    					<li><a href="#feature3">Giới Thiệu</a></li>
+	    					<li><a href="trinhngoctienjayce@gmail.com">Liên Hệ</a></li>
+	    				</ul>
+	    				<p class="text-muted">Bản quyền này thuộc về nhóm HQL</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div> <!-- #footer -->
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script src="Hello World"></script>
+	</body>
+</html>
